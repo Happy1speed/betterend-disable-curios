@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "betterenddisablecurios",
+	"version": "${version}",
+	"name": "Better End Disable Curios Mod",
+	"description": "Disables betterend elytra from being put in the curios slot",
+	"authors": [
+		"Happy1speed"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/betterenddisablecurios/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.happyspeed.betterenddisablecurios.BetterEndDisableCuriosMod"
+		],
+		"client": [
+			"net.happyspeed.betterenddisablecurios.BetterEndDisableCuriosModClient"
+		]
+	},
+	"mixins": [
+		"betterenddisablecurios.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.8",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
